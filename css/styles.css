@@ -8,19 +8,19 @@ img {
   width: 80%;
 }
 
-.column {
+/* .column {
   float: left;
-  width: 30%;
+  width: 33.3%;
   border: 5px solid green;
   padding: 5px;
   margin: 5px;
-}
+} */
 
-.row:after {
+/* .row:after {
   content: "":
   display: table;
   clear: both;
-}
+} */
 
 .column p {
   color: purple;
@@ -28,4 +28,19 @@ img {
 
 .column p span {
   color: red;
+}
+
+@media screen and (max-width: 480px) {
+  .column {
+    width: 300px;
+    float: left;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .column {
+    float: left;
+    width: 33.33%;
+  }
 }
