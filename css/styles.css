@@ -1,0 +1,31 @@
+body {
+  background-color: #e1e5da;
+  text-align: center;
+}
+
+img {
+  height: 30%;
+  width: 80%;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  border: 5px solid green;
+  padding: 5px;
+  margin: 5px;
+}
+
+.row:after {
+  content: "":
+  display: table;
+  clear: both;
+}
+
+.column p {
+  color: purple;
+}
+
+.column p span {
+  color: red;
+}
